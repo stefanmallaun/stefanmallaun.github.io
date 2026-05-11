@@ -130,3 +130,81 @@ footer {
         flex-direction: column;
     }
 }
+
+/* Navbar */
+.navbar {
+    background: #111827;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Desktop Navigation */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Sichtbarer Tastatur Fokus */
+.nav-links a:focus,
+.menu-toggle:focus {
+    outline: 3px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+/* Burger Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 70px;
+        right: 20px;
+
+        flex-direction: column;
+        gap: 1rem;
+
+        background: #111827;
+        padding: 1rem;
+
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    
+}
+

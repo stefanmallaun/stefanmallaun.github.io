@@ -1,38 +1,164 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js"></script>
-    <!-- Preise -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <h2>Geschäftsmodell</h2>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiFlow</title>
 
-            <div class="pricing-grid">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-                <article class="price-card">
-                    <h3>SaaS Abo</h3>
-                    <p class="price">100€ / Monat</p>
-                    <p>Ideal für kleine und mittlere Unternehmen.</p>
-                </article>
+<body>
 
-                <article class="price-card">
-                    <h3>Enterprise Lizenz</h3>
-                    <p class="price">5000€ – 10.000€</p>
-                    <p>Individuelle Lösungen für große Unternehmen.</p>
-                </article>
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main-content">
+        Zum Inhalt springen
+    </a>
 
-                <article class="price-card">
-                    <h3>Beratungsservice</h3>
-                    <p class="price">50€ / Stunde</p>
-                    <p>Unterstützung bei Integration und Optimierung.</p>
-                </article>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="container nav-container">
+
+                <a href="index.html">
+                    <h1 class="logo">LogiFlow</h1>
+                </a>
+
+                <!-- Burger Button -->
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Menü öffnen"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+
+                    ☰
+                </button>
+
+                <!-- Navigation -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a href="lizenz.html">Lizenzen</a></li>
+                    <li><a href="zielgruppe.html">Zielgruppe</a></li>
+                    <li><a href="ueberuns.html">About Us</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
 
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-text">
+
+                    <h2>
+                        Intelligent Logistics Assistant for SAP
+                    </h2>
+
+                    <p>
+                        KI-gestützte Analyse von Lagerbeständen,
+                        Lieferketten und Rechnungen direkt in Ihrem SAP-System.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="kontakt.html" class="btn-primary">
+                            Demo anfragen
+                        </a>
+
+                        <a href="preise.html" class="btn-secondary">
+                            Preise ansehen
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Dashboard Preview -->
+                <div class="hero-dashboard"
+                     aria-label="Beispiel eines Analyse Dashboards">
+
+                    <div class="dashboard-card">
+                        <h3>Lagerbestand</h3>
+                        <p>Produkt A: 150</p>
+                        <p>Produkt B: 240</p>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>KI Prognose</h3>
+                        <p>
+                            +12% Nachfrage in den nächsten 30 Tagen
+                        </p>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>Rechnungen</h3>
+                        <p>
+                            24 neue Dokumente automatisch verarbeitet
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+
+            <div class="container">
+
+                <h2>Funktionen</h2>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+                        <h3>KI-Lageranalyse</h3>
+
+                        <p>
+                            Echtzeit-Überblick über Lagerbestände,
+                            Lieferungen und Bestellungen.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Dokumentenerkennung</h3>
+
+                        <p>
+                            Automatische Verarbeitung von Rechnungen
+                            und Belegen mittels KI.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Trendprognosen</h3>
+
+                        <p>
+                            Intelligente Vorhersagen für zukünftige
+                            Lager- und Lieferentwicklungen.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <!-- Accessibility -->
     <section id="accessibility" class="accessibility">
+
         <div class="container">
+
             <h2>Barrierefreiheitserklärung</h2>
 
             <p>
@@ -44,36 +170,21 @@
             <p>
                 Zur Überprüfung wurden WAVE, AXE DevTools und Lighthouse verwendet.
             </p>
+
         </div>
-    </section>
 
-    <!-- Kontakt -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Kontakt</h2>
-
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" required>
-
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" required>
-
-                <label for="message">Nachricht</label>
-                <textarea id="message" rows="5" required></textarea>
-
-                <button type="submit">Nachricht senden</button>
-            </form>
-        </div>
     </section>
 
     <!-- Footer -->
     <footer>
+
         <div class="container">
             <p>© 2026 LogiFlow GmbH – Wien</p>
         </div>
+
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
