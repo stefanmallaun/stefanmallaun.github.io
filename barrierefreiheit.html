@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrierefreiheitserklärung | LogiFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Skip-Link für Tastaturnutzer (WCAG Empfehlung) -->
+    <a href="#main-content" class="skip-link" style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">Direkt zum Inhalt springen</a>
+
+    <header>
+        <nav class="navbar" aria-label="Hauptnavigation">
+            <div class="container nav-container">
+                <a href="index.html" aria-label="LogiFlow Startseite">
+                    <span class="logo">LogiFlow</span>
+                </a>
+
+                <!-- Burger Button -->
+                <button 
+                    class="menu-toggle" 
+                    id="menu-toggle" 
+                    aria-label="Menü öffnen" 
+                    aria-expanded="false" 
+                    aria-controls="nav-links">
+                    <span aria-hidden="true">☰</span>
+                </button>
+
+                <!-- Navigation -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a href="lizenz.html">Lizenzen</a></li>
+                    <li><a href="zielgruppe.html">Zielgruppe</a></li>
+                    <li><a href="ueberuns.html">About Us</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="accessibility">
+            <div class="container">
+                <h1>Barrierefreiheitserklärung</h1>
+                
+                <p>
+                    Die LogiFlow GmbH ist bemüht, ihre Website im Einklang mit dem Barrierefreiheitsgesetz (BaFG) zur Umsetzung der Richtlinie (EU) 2016/2102 barrierefrei zugänglich zu machen.
+                </p>
+
+                <h3>Stand der Vereinbarkeit</h3>
+                <p>
+                    Diese Website ist <strong>vollständig</strong> mit den Richtlinien für barrierefreie Webinhalte (WCAG 2.2) auf Konformitätsstufe AA vereinbar.
+                </p>
+
+                <h3>Berücksichtigte Maßnahmen</h3>
+                <p>Zur Gewährleistung der Barrierefreiheit wurden folgende Standards implementiert:</p>
+                <ul>
+                    <li>Hohe Farbkontraste zur optimalen Lesbarkeit.</li>
+                    <li>Vollständige Tastaturbedienbarkeit aller interaktiven Elemente.</li>
+                    <li>Responsive Design zur Anpassung an verschiedene Bildschirmgrößen.</li>
+                    <li>Deutlich sichtbare Fokus-Markierungen für die Tastatur-Navigation.</li>
+                    <li>Semantische HTML-Struktur zur Unterstützung von Screenreadern (z.B. NVDA).</li>
+                    <li>Verwendung von ARIA-Attributen zur Kennzeichnung dynamischer Zustände (z.B. Mobil-Menü).</li>
+                    <li>Vermeidung von kognitiven Barrieren bei der Authentifizierung (WCAG 2.2 Standard).</li>
+                </ul>
+
+                <h3>Überprüfung der Barrierefreiheit</h3>
+                <p>Die Konformität wird regelmäßig durch manuelle Stichproben und folgende Tools überprüft:</p>
+                <ul>
+                    <li>WAVE Accessibility Tool</li>
+                    <li>AXE DevTools</li>
+                    <li>Google Lighthouse</li>
+                </ul>
+
+                <h3>Feedback und Kontaktangaben</h3>
+                <p>
+                    Sollten Ihnen Barrieren auf unserer Website auffallen, kontaktieren Sie uns bitte:
+                </p>
+                <p>
+                    <strong>LogiFlow GmbH</strong><br>
+                    Wien, Österreich<br>
+                    E-Mail: <a href="mailto:support@logiflow.at">support@logiflow.at</a>
+                </p>
+
+                <h3>Durchsetzungsverfahren</h3>
+                <p>
+                    Sollten Sie auf Ihre Anfrage keine zufriedenstellende Antwort erhalten, können Sie sich an die Beschwerdestelle der Österreichischen Forschungsförderungsgesellschaft (FFG) wenden:
+                </p>
+                <p>
+                    <a href="https://www.ffg.at/barrierefreiheit/beschwerdestelle" target="_blank" rel="noopener">Zum Kontaktformular der FFG Beschwerdestelle</a>
+                </p>
+
+                <h3>Stand der Erklärung</h3>
+                <p>Diese Erklärung wurde am 5. Mai 2026 erstellt.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 LogiFlow GmbH – Wien</p>
+            <nav aria-label="Footer Navigation">
+                <ul class="footer-links">
+                    <li><a href="barrierefreiheit.html" aria-current="page">Barrierefreiheit</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
