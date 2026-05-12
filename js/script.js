@@ -20,3 +20,21 @@ toggleButton.addEventListener("click", () => {
         !expanded
     );
 });
+
+const form = document.getElementById("contact");
+const sound = document.getElementById("submitSound");
+
+if (form) {
+form.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    sound.currentTime = 0;
+    sound.play();
+
+    
+    setTimeout(() => {
+        form.submit(); 
+    }, 300);
+});
+}
+

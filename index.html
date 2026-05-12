@@ -6,9 +6,19 @@
     <title>LogiFlow</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">
+    Zum Inhalt springen
+    </a>
 
     <header>
         <nav class="navbar">
@@ -19,7 +29,7 @@
                     <h1 class="logo">LogiFlow</h1>
                 </a>
 
-                <!-- Burger Button -->
+                
                 <button
                     class="menu-toggle"
                     id="menu-toggle"
@@ -30,7 +40,7 @@
                     ☰
                 </button>
 
-                <!-- Navigation -->
+                
                 <ul class="nav-links" id="nav-links">
                     <li><a href="preise.html">Preise</a></li>
                     <li><a href="lizenz.html">Lizenzen</a></li>
@@ -49,50 +59,52 @@
         
         <section class="hero">
 
-            <div class="container hero-container">
+    <div class="container hero-container">
 
-                <div class="hero-text">
+        <div class="hero-text">
 
-                    <h2>
-                        Intelligenter Logistik Assistent für SAP-Software
-                    </h2>
+            <h2>
+                Intelligenter Logistik Assistent für SAP-Software
+            </h2>
 
-                    <p>
-                        KI-gestützte Analyse von Lagerbeständen,
-                        Lieferketten und Rechnungen direkt in Ihrem SAP-System.
-                    </p>
+            <p>
+                KI-gestützte Analyse von Lagerbeständen,
+                Lieferketten und Rechnungen direkt in Ihrem SAP-System.
+            </p>
 
-                    <section class="video-banner">
+        </div>
 
-                        <iframe
-                            src="https://www.youtube.com/embed/crg3mKfiiDs?autoplay=1&mute=1&loop=1&playlist=crg3mKfiiDs&controls=0"
-                            title="LogiFlow Banner Video"
-                            frameborder="0"
-                            allow="autoplay"
-                            allowfullscreen>
-                        </iframe>
+    </div>
 
-                    </section>
+   
+    
 
-                    
+    <div class="container">
 
-                    <div class="hero-buttons">
-                        <a href="kontakt.html" class="btn-primary">
-                            Demo anfragen
-                        </a>
+        <div class="hero-buttons">
+            <a href="kontakt.html" class="btn-primary">Demo anfragen</a>
+            <a href="preise.html" class="btn-secondary">Preise ansehen</a>
+        </div>
 
-                        <a href="preise.html" class="btn-secondary">
-                            Preise ansehen
-                        </a>
-                    </div>
+    </div>
+    <div class="video-banner">
 
-                </div>
+        <video autoplay muted loop playsinline>
+            <source src="media/banner.mp4" type="video/mp4">
+        </video>
 
-                <!-- Dashboard Preview -->
+    </div>
+
+
+
+    
+
+                
                 <div class="hero-dashboard"
                      aria-label="Beispiel eines Analyse Dashboards">
-
+                    
                     <div class="dashboard-card">
+                        <h2>Beispiel einer Analyse</h2>
                         <h3>Lagerbestand</h3>
                         <p>Produkt A: 150</p>
                         <p>Produkt B: 240</p>
@@ -134,7 +146,9 @@
                             Echtzeit-Überblick über Lagerbestände,
                             Lieferungen und Bestellungen.
                         </p>
+                        <i class="fa-brands fa-searchengin"></i>
                     </article>
+                    
 
                     <article class="feature-card">
                         <h3>Dokumentenerkennung</h3>
@@ -143,6 +157,7 @@
                             Automatische Verarbeitung von Rechnungen
                             und Belegen mittels KI.
                         </p>
+                        <i class="fa-solid fa-file"></i>
                     </article>
 
                     <article class="feature-card">
@@ -152,6 +167,7 @@
                             Intelligente Vorhersagen für zukünftige
                             Lager- und Lieferentwicklungen.
                         </p>
+                        <i class="fa-solid fa-chart-line"></i>
                     </article>
 
                 </div>
@@ -162,28 +178,6 @@
 
     </main>
 
-    <!-- Accessibility -->
-    <section id="accessibility" class="accessibility">
-
-        <div class="container">
-
-            <h2>Barrierefreiheitserklärung</h2>
-
-            <p>
-                Diese Website wurde nach den Richtlinien der WCAG 2.2 AA entwickelt.
-                Hohe Farbkontraste, Tastaturbedienbarkeit und responsive Gestaltung
-                wurden berücksichtigt.
-            </p>
-
-            <p>
-                Zur Überprüfung wurden WAVE, AXE DevTools und Lighthouse verwendet.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
     <footer>
     <div class="container">
 
@@ -202,13 +196,21 @@
                         Kontakt
                     </a>
                 </li>
+                <li>
+                    <a href="urheberrecht.html">
+                        Urheberrecht
+                    </a>
+                </li>
             </ul>
         </nav>
 
     </div>
 </footer>
-
+   
     <script src="js/script.js"></script>
-
+    
 </body>
+
+
+
 </html>
