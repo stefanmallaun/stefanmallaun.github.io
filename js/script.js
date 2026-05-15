@@ -2,7 +2,7 @@ const demoButton = document.getElementById("demoButton");
 
 if (demoButton) {
     demoButton.addEventListener("click", function () {
-        alert("Vielen Dank für Ihr Interesse an LogiFlow!");
+        alert("Vielen Dank für Ihr Interesse an LogiFlux!");
     });
 }
 
@@ -37,4 +37,19 @@ form.addEventListener("submit", function (e) {
     }, 300);
 });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.getElementById("cookie-banner");
+    const button = document.getElementById("accept-cookies");
+
+    // prüfen ob schon akzeptiert wurde
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        banner.style.display = "none";
+    }
+
+    button.addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+    });
+});
 
