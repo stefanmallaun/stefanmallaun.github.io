@@ -39,16 +39,27 @@ form.addEventListener("submit", function (e) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const banner = document.getElementById("cookie-banner");
-    const button = document.getElementById("accept-cookies");
 
-    // prüfen ob schon akzeptiert wurde
-    if (localStorage.getItem("cookiesAccepted") === "true") {
+    const banner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+    const rejectBtn = document.getElementById("notaccept-cookies");
+
+    const status = localStorage.getItem("cookiesAccepted");
+
+    // Wenn schon entschieden → Banner ausblenden
+    if (status === "true" || status === "false") {
         banner.style.display = "none";
     }
 
-    button.addEventListener("click", function () {
+    // Cookies akzeptieren
+    acceptBtn.addEventListener("click", function () {
         localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+    });
+
+    // Cookies ablehnen
+    rejectBtn.addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "false");
         banner.style.display = "none";
     });
 });
