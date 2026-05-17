@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const status = localStorage.getItem("cookiesAccepted");
 
     // Wenn schon entschieden → Banner ausblenden
-    if (status === "true" || status === "false") {
+    if (status === "true") {
         banner.style.display = "none";
     }
 
